@@ -82,7 +82,16 @@ services:
     networks:
       - lapka
     command: server --console-address ":9001" /data
-    
+  
+  identity:
+    image: mobicommunity/lapkaidentity:1.0
+    container_name: lapka_identity
+    restart: unless-stopped
+    ports:
+     - 5001:5001
+    networks:
+     - lapka
+  
   pets:
     image: mobicommunity/lapkapets:1.0
     container_name: lapka_pets
