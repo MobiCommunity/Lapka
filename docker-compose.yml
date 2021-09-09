@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   lapka_identity:
-    image: mobicommunity/lapkaidentity:1.0
+    image: mobicommunity/lapkaidentity:develop
     container_name: lapka_identity
     restart: unless-stopped
     ports:
@@ -13,7 +13,7 @@ services:
       - lapka
 
   lapka_pets:
-    image: mobicommunity/lapkapets:1.0
+    image: mobicommunity/lapkapets:develop
     container_name: lapka_pets
     restart: unless-stopped
     ports:
@@ -23,7 +23,7 @@ services:
       - lapka
 
   lapka_files:
-    image: mobicommunity/lapkafiles:1.0
+    image: mobicommunity/lapkafiles:develop
     container_name: lapka_files
     restart: unless-stopped
     ports:
@@ -33,7 +33,7 @@ services:
       - lapka
   
   lapka_communication:
-    image: mobicommunity/lapkacommunication:1.0
+    image: mobicommunity/lapkacommunication:develop
     container_name: lapka_communication
     restart: unless-stopped
     ports:
