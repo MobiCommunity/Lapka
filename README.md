@@ -25,3 +25,14 @@ Our application includes such repositories as:
 - [Lapka.Pets](https://github.com/MobiCommunity/Lapka.Pets)
 - [Lapka.Files](https://github.com/MobiCommunity/Lapka.Files)
 - [Lapka.Communication](https://github.com/MobiCommunity/Lapka.Communication)
+
+**Usage**
+----------------
+If you have installed docker hub follow points bellow:
+- Download docker.compose.yml 
+`git clone https://github.com/MobiCommunity/Lapka`
+- Go to folder `Lapka`
+- Write in cmd
+`docker-compose up`
+
+
