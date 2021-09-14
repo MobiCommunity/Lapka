@@ -91,7 +91,7 @@ services:
       - lapka
 
   mongo:
-    image: mongo
+    image: mongo:4.4.8
     container_name: mongo_lapka
     restart: unless-stopped
     ports:
